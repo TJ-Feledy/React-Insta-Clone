@@ -8,7 +8,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {console.log(dummyData)}
+      {dummyData.map(obj => {
+        return <PostContainer object={obj} key={obj.id} />
+      })}
     </div>
   );
 }
