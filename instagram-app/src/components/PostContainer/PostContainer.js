@@ -7,7 +7,7 @@ import '../PostContainer/PostContainer.css';
 function PostContainer(props) {
   return (
     <div className='postContainer'>
-      {console.log(props.object.comments)}
+      {/* {console.log(props.object.comments)} */}
       <CommentSection comments={props.object.comments} />
     </div>
   )
