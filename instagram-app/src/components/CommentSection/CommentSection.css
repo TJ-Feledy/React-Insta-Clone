@@ -1,0 +1,41 @@
+.commentSection {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  margin: .3rem .5rem;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.userName {
+  margin: 0 .5rem 0;
+  font-weight: 700;
+}
+
+.text {
+  margin: .1rem ;
+  font-weight: 550; 
+}
+
+.addComment {
+  width: auto;
+  display: flex;
+  border-top: solid 1px lightgray;
+  margin: 1rem;
+  margin-right: 1rem;
+  padding-top: .5rem;
+  left: 0;
+}
+.addComment input {
+  width: 80vw;
+  text-align: left;
+  padding: 1rem;
+  border: none;
+}
