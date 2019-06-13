@@ -5,10 +5,8 @@ import CommentSection from '../CommentSection/CommentSection';
 function PostContainer(props) {
   return (
     <div className='postContainer'>
-      {console.log(props.object)}
-      {props.map((obj, index) => {
-        return <CommentSection comments={obj.comments} key={index} />
-      })}
+      {console.log(props.object.comments)}
+      <CommentSection comments={props.comments} />
     </div>
   )
 }
