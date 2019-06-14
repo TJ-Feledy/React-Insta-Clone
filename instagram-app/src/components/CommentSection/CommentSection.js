@@ -1,5 +1,7 @@
 import React from 'react';
-import Comment from './Comment'
+import Comment from './Comment';
+import CommentForm from './CommentForm';
+
 import '../CommentSection/CommentSection.css';
 
 function CommentSection(props) {
@@ -9,9 +11,7 @@ function CommentSection(props) {
       {props.comments.map(comment => {
         return <Comment userName={comment.username} text={comment.text} key={comment.id} />
       })}
-      <form className='addComment'>
-        <input type='text' placeholder='Add a comment...' />
-      </form>
+      <CommentForm comments={props.comments} />
     </div>
   )
 }
