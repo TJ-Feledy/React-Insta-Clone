@@ -1,0 +1,30 @@
+.postContainer {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 2rem;
+  border: 1px solid lightgray;
+}
+
+.postImg {
+  width: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.thumbnailImg {
+  border-radius: 100%;
+  width: 2.5rem;
+  margin: 1rem;
+}
+
+.likes {
+  text-align: left;
+  width: 5rem;
+  margin-left: 1rem;
+  font-weight: 625;
+}

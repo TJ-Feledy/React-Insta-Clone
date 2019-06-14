@@ -14,3 +14,7 @@ nav a img{
   margin: 0 .5rem;
   opacity: .4;
 }
+
+nav a img:hover {
+  opacity: .7;
+}

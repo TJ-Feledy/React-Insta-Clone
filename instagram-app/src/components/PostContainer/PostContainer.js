@@ -13,7 +13,7 @@ function PostContainer(props) {
         <p className='userName'> {props.object.username} </p>
       </div>
       <img className='postImg' src={props.object.imageUrl} alt='Look at this!' />
-      <p className='likes'> {props.object.likes} </p>
+      <p className='likes'> {props.object.likes} likes</p>
       <CommentSection comments={props.object.comments} time={props.object.timestamp} />
     </div>
   )
