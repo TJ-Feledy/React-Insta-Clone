@@ -9,12 +9,18 @@
 .logo {
   width: 11rem;
 }
-nav a img{
-  width: 1.2rem;
+
+nav a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+nav a i {
+  width: 1.5rem;
   margin: 0 .5rem;
   opacity: .4;
 }
 
-nav a img:hover {
+nav a i:hover {
   opacity: .7;
 }

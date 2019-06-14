@@ -1,10 +1,5 @@
 import React from 'react'
 
-import InstaLogo from 'C:/Users/TJFeledy/Desktop/LambdaSchoolWork/ReactApps/React-Insta-Clone/instagram-app/src/components/SearchBar/instaLogo.png';
-import Compass from 'C:/Users/TJFeledy/Desktop/LambdaSchoolWork/ReactApps/React-Insta-Clone/instagram-app/src/components/SearchBar/compass.svg';
-import Heart from 'C:/Users/TJFeledy/Desktop/LambdaSchoolWork/ReactApps/React-Insta-Clone/instagram-app/src/components/SearchBar/heart.svg';
-import User from 'C:/Users/TJFeledy/Desktop/LambdaSchoolWork/ReactApps/React-Insta-Clone/instagram-app/src/components/SearchBar/user.svg';
-
 import './SearchBar.css'
 
 class SearchBar extends React.Component {
@@ -18,12 +13,12 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className='searchBar'>
-        <img className='logo' src={InstaLogo} alt='logo'></img>
+        <img className='logo' src='https://lh5.googleusercontent.com/9ZE6GceflqamipCXLijjUlN4D3qfKbP_s2adT1zw4kEpVfh76KUFTgSN1ac2GAvb5t5k-X31JbaTl5hfZ9EVIToib__x811qml11uJG05MeFLbKd0Q=w1175' alt='logo'></img>
         <input type='text' placeholder='Search' />
         <nav className='nav'>
-          <a href='..../public/index.html'><img src={Compass} alt='compass' /></a>
-          <a href='..../public/index.html'><img src={Heart} alt='heart' /></a>
-          <a href='..../public/index.html'><img src={User} alt='user' /></a>
+          <a href='..../public/index.html'><i className="far fa-compass"></i></a>
+          <a href='..../public/index.html'><i className="far fa-heart"></i></a>
+          <a href='..../public/index.html'><i className="far fa-user"></i></a>
         </nav>
       </div>
     )
