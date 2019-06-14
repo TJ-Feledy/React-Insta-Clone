@@ -21,9 +21,9 @@ class SearchBar extends React.Component {
         <img className='logo' src={InstaLogo} alt='logo'></img>
         <input type='text' placeholder='Search' />
         <nav className='nav'>
-          <a href='#'><img src={Compass} alt='compass' /></a>
-          <a href='#'><img src={Heart} alt='heart' /></a>
-          <a href='#'><img src={User} alt='user' /></a>
+          <a href='..../public/index.html'><img src={Compass} alt='compass' /></a>
+          <a href='..../public/index.html'><img src={Heart} alt='heart' /></a>
+          <a href='..../public/index.html'><img src={User} alt='user' /></a>
         </nav>
       </div>
     )

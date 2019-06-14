@@ -7,8 +7,14 @@ import '../PostContainer/PostContainer.css';
 function PostContainer(props) {
   return (
     <div className='postContainer'>
-      {/* {console.log(props.object.comments)} */}
-      <CommentSection comments={props.object.comments} />
+      {/* {console.log(props.object)} */}
+      <div className='thumbnail'>
+        <img className='thumbnailImg' src={props.object.thumbnailUrl} alt='thumbnail' />
+        <p className='userName'> {props.object.username} </p>
+      </div>
+      <img className='postImg' src={props.object.imageUrl} alt='Look at this!' />
+      <p className='likes'> {props.object.likes} </p>
+      <CommentSection comments={props.object.comments} time={props.object.timestamp} />
     </div>
   )
 };
@@ -28,6 +34,19 @@ PostContainer.propTypes = {
     timestamp: PropTypes.string,
 
   })
+
+};
+
+PostContainer.defaultProps = {
+  object: [{
+    id: 0,
+    username: 'default',
+    thumbnailUrl: '',
+    comments: [{id:0,username:'',text:''}],
+    imageUrl: '',
+    likes: 0,
+    timestamp: '',
+  }]
 }
 
 export default PostContainer

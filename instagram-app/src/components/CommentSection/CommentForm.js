@@ -5,6 +5,7 @@ import './CommentForm.css';
 class CommentForm extends React.Component {
   constructor(props) {
     super(props);
+    // console.log(this.props.comments)
     this.state = {
       addComment: '',
     }
