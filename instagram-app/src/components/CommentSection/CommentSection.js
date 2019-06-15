@@ -10,8 +10,10 @@ class CommentSection extends React.Component {
   constructor(props) {
     super(props);
     const commenters = this.props.comments;
+    const time = this.props.time;
     this.state = {
       updatedCommenters: commenters,
+      newTime: time,
     }
   }
   
@@ -22,14 +24,18 @@ class CommentSection extends React.Component {
       text: newComment
     };
 
+
     this.setState({
-      updatedCommenters: [...this.state.updatedCommenters, newCommenter]
+      updatedCommenters: [...this.state.updatedCommenters, newCommenter],
+      newTime: moment().format('MMMM Do YYYY, h:mm:ss a')
     })
   }
 
   render() {
     console.log(this.state.updatedCommenters)
-    const timeAgo = moment(this.props.time, 'MMMM Do YYYY, h:mm:ss a').startOf('day').fromNow()
+    console.log(this.state.newTime)
+
+    const timeAgo = moment(this.state.newTime, 'MMMM Do YYYY, h:mm:ss a').fromNow()
     return (
       <div className='commentSection'>
         {this.state.updatedCommenters.map(comment => {
