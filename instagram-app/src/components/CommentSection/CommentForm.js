@@ -11,11 +11,24 @@ class CommentForm extends React.Component {
     }
   }
 
+  changHandler = event => {
+    this.setState({ addComment: event.target.value });
+  };
+
+  submitHandler = event => {
+    event.preventDefault();
+    // console.log(this.props.)
+  }
+
   render() {
     return (
       <div className='addComment'>
         <form>
-          <input type='text' placeholder='Add a comment...' />
+          <input 
+            type='text' 
+            placeholder='Add a comment...'
+            value={this.state.addComment}
+          />
         </form>
       </div>
     )
