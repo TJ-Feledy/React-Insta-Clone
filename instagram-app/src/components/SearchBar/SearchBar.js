@@ -13,7 +13,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className='searchBar'>
-        <img className='logo' src='https://lh6.googleusercontent.com/sd2hf8yEqz6o5otl4xytK_TlmUqCTfhGFJ0GA1uqxgCianawr3tK8W6Ig02zLgtfS8eLFgbX1HTr26dlFapNGPRMQ250nTod7JrEXD4ffYu3rQDzTA=w1175' alt='logo'></img>
+        <img className='logo' src='https://tjsappstuff.webnode.com/_files/200000000-3acfa3bd0a/instaLogo.png' alt='logo'></img>
         <input type='text' placeholder='Search' />
         <nav className='nav'>
           <a href='..../public/index.html'><i className="far fa-compass"></i></a>

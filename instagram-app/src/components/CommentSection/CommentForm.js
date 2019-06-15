@@ -5,29 +5,32 @@ import './CommentForm.css';
 class CommentForm extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(this.props.comments)
+    // console.log(this.props.addNewComment)
     this.state = {
       addComment: '',
     }
   }
 
-  changHandler = event => {
+  changeHandler = event => {
     this.setState({ addComment: event.target.value });
   };
 
   submitHandler = event => {
     event.preventDefault();
-    // console.log(this.props.)
+    // console.log(this.state.addComment)
+    this.props.addNewComment(this.state.addComment);
+    this.setState({addComment: ''})
   }
 
   render() {
     return (
       <div className='addComment'>
-        <form>
+        <form onSubmit={this.submitHandler}>
           <input 
             type='text' 
             placeholder='Add a comment...'
             value={this.state.addComment}
+            onChange={this.changeHandler}
           />
         </form>
       </div>

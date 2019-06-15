@@ -9,14 +9,11 @@ class Comment extends React.Component {
   };
 
   render() {
+    
     return (
       <div className='comment'>
-        {/* {console.log(this.props)} */}
-        <h3 className='userName'>
-          {this.props.userName}
-          <p className='text'>{this.props.text}</p>
-        </h3>
-        
+        <h3 className='userName'>{this.props.userName}</h3>
+        <p className='text'>{this.props.text}</p>
       </div>
     )
   }

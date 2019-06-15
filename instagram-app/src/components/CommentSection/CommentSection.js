@@ -14,10 +14,10 @@ class CommentSection extends React.Component {
       updatedCommenters: commenters,
     }
   }
-
+  
   addCommenter = newComment => {
     const newCommenter = {
-      id: this.state.updatedCommenters.length,
+      id: this.state.updatedCommenters.length+1,
       username: 'insta-guest',
       text: newComment
     };
@@ -28,10 +28,11 @@ class CommentSection extends React.Component {
   }
 
   render() {
+    console.log(this.state.updatedCommenters)
     const timeAgo = moment(this.props.time, 'MMMM Do YYYY, h:mm:ss a').startOf('day').fromNow()
     return (
       <div className='commentSection'>
-        {this.props.comments.map(comment => {
+        {this.state.updatedCommenters.map(comment => {
           return <Comment userName={comment.username} text={comment.text} key={comment.id} />
         })}
         <p className='timeAgo'> {timeAgo} </p>
