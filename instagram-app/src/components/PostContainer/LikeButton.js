@@ -3,7 +3,7 @@ import React from 'react'
 class LikeButton extends React.Component {
   constructor(props) {
     super(props);
-
+    console.log(props)
     const likes = {
       numLikes: this.props.likes,
       clicked: false
@@ -38,6 +38,16 @@ class LikeButton extends React.Component {
   clickHandler = () => {
     this.toggleItem(this.state.newLikes)
   }
+
+  // componentWillUpdate(nextProps, nextState) {
+  //   localStorage.setItem('newLikes', JSON.stringify(nextState.newLikes));
+  // }
+
+  // componentWillMount() {
+  //   localStorage.getItem('newLikes') && this.setState({
+  //     newLikes: JSON.parse(localStorage.getItem('newLikes')),
+  //   })
+  // }
 
   render() {
     return (

@@ -15,6 +15,7 @@ class CommentSection extends React.Component {
       updatedCommenters: commenters,
       newTime: time,
     }
+    console.log(this.state)
   }
   
   addCommenter = newComment => {
@@ -31,17 +32,17 @@ class CommentSection extends React.Component {
     })
   }
 
-  componentWillUpdate(nextProps,nextState) {
-    localStorage.setItem('commenters', JSON.stringify(nextState.updatedCommenters));
-    localStorage.setItem('time', JSON.stringify(nextState.newTime));
-  }
+  // componentWillUpdate(nextProps,nextState) {
+  //   localStorage.setItem('commenters', JSON.stringify(nextState.updatedCommenters));
+  //   localStorage.setItem('time', JSON.stringify(nextState.newTime));
+  // }
 
-  componentWillMount() {
-    localStorage.getItem('commenters') && this.setState({
-      updatedCommenters: JSON.parse(localStorage.getItem('commenters')),
-      newTime: JSON.parse(localStorage.getItem('time'))
-    })
-  }
+  // componentWillMount() {
+  //   localStorage.getItem('commenters') && this.setState({
+  //     updatedCommenters: JSON.parse(localStorage.getItem('commenters')),
+  //     newTime: JSON.parse(localStorage.getItem('time'))
+  //   })
+  // }
   
 
   render() {
