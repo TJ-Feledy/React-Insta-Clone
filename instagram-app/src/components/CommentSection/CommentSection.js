@@ -31,6 +31,19 @@ class CommentSection extends React.Component {
     })
   }
 
+  componentWillUpdate(nextProps,nextState) {
+    localStorage.setItem('commenters', JSON.stringify(nextState.updatedCommenters));
+    localStorage.setItem('time', JSON.stringify(nextState.newTime));
+  }
+
+  componentWillMount() {
+    localStorage.getItem('commenters') && this.setState({
+      updatedCommenters: JSON.parse(localStorage.getItem('commenters')),
+      newTime: JSON.parse(localStorage.getItem('time'))
+    })
+  }
+  
+
   render() {
     console.log(this.state.updatedCommenters)
     console.log(this.state.newTime)
