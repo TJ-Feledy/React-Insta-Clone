@@ -15,7 +15,6 @@ function PostContainer(props) {
       </div>
       <img className='postImg' src={props.object.imageUrl} alt='Look at this!' />
       <LikeButton likes={props.object.likes} />
-      <p className='likes'> {props.object.likes} likes</p>
       <CommentSection comments={props.object.comments} time={props.object.timestamp} />
     </div>
   )

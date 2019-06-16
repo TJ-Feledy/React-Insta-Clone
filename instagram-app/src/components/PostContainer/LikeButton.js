@@ -14,14 +14,41 @@ class LikeButton extends React.Component {
     }
   }
 
+  toggleItem = like => {
+    console.log(like);
+    let newLikeItem = {};
+    if (this.state.newLikes.clicked === false) {
+      newLikeItem = {
+        ...like,
+        numLikes: like.numLikes + 1,
+        clicked: true
+      };
+      return this.setState({ newLikes: newLikeItem });
+    } 
+    else if (this.state.newLikes.clicked === true){
+      newLikeItem = {
+        ...like,
+        numLikes: like.numLikes - 1,
+        clicked: false
+      };
+      return this.setState({ newLikes: newLikeItem });
+    };
+  }
+  
   clickHandler = () => {
-
+    this.toggleItem(this.state.newLikes)
   }
 
   render() {
     return (
-      <div className='likeButton'>
-        <i className="far fa-heart"></i>
+      <div className='likeContainer'>
+        <div 
+          className={`likeButton ${this.state.newLikes.clicked ? 'clicked' : ''}`}
+          onClick={this.clickHandler}
+        >
+          <i className="far fa-heart"></i>
+        </div>
+        <p className='likes'> {this.state.newLikes.numLikes} likes</p>
       </div>
     )
   }

@@ -40,3 +40,7 @@
 .likeButton:hover {
   opacity: .7;
 }
+.clicked {
+  color: goldenrod;
+  opacity: 1;
+}
