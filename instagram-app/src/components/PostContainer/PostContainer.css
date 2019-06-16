@@ -28,4 +28,15 @@
   width: 5rem;
   margin-left: 1rem;
   font-weight: 625;
+  margin-top: 0;
+}
+
+.likeButton {
+  margin-left: 1rem;
+  margin-right: 0;
+  opacity: .5;
+  width: 1.1rem;
+}
+.likeButton:hover {
+  opacity: .7;
 }

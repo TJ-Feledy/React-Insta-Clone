@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentSection from '../CommentSection/CommentSection';
+import LikeButton from './LikeButton';
 
 import '../PostContainer/PostContainer.css';
 
@@ -13,6 +14,7 @@ function PostContainer(props) {
         <p className='userName'> {props.object.username} </p>
       </div>
       <img className='postImg' src={props.object.imageUrl} alt='Look at this!' />
+      <LikeButton likes={props.object.likes} />
       <p className='likes'> {props.object.likes} likes</p>
       <CommentSection comments={props.object.comments} time={props.object.timestamp} />
     </div>
