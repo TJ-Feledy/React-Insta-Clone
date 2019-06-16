@@ -3,7 +3,7 @@ import React from 'react'
 class LikeButton extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props)
+    // console.log(props)
     const likes = {
       numLikes: this.props.likes,
       clicked: false
@@ -15,7 +15,7 @@ class LikeButton extends React.Component {
   }
 
   toggleItem = like => {
-    console.log(like);
+    // console.log(like);
     let newLikeItem = {};
     if (this.state.newLikes.clicked === false) {
       newLikeItem = {
