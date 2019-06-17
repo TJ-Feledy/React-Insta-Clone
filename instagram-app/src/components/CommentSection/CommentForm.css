@@ -1,0 +1,19 @@
+.addComment {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px lightgray;
+  margin: 1rem;
+  padding-top: .5rem;
+}
+.addComment form {
+  width: 100%;
+  padding-top: 1rem;
+}
+.addComment input {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  border: none;
+}

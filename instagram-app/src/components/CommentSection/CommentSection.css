@@ -1,0 +1,36 @@
+.commentSection {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+  flex-flow: row;
+  margin: .3rem .5rem;
+  font-size: .9rem;
+}
+
+.userName {
+  margin: 0 .5rem 0;
+  font-weight: 700;
+  height: 1.3rem;
+  float: left;
+}
+
+.text {
+  margin: 0;
+  margin-left: .4rem ;
+  padding-top: .15rem;
+  font-weight: 550;
+}
+
+.timeAgo {
+  text-align: left;
+  margin: 0;
+  margin-left: 1rem;
+  opacity: .3;
+  font-weight: bold;
+}

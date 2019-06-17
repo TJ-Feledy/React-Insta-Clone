@@ -1,0 +1,59 @@
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-bottom: solid 1px lightgray;
+}
+.logo {
+  width: 11rem;
+}
+
+nav a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+nav a i {
+  width: 1.5rem;
+  margin: 0 .5rem;
+  opacity: .4;
+}
+
+nav a i:hover {
+  opacity: .7;
+}
+
+.searchForm input {
+  padding: 0 .5rem;
+  max-width: 8rem;
+}
+
+.searchForm {
+  position: static;
+  top: .8rem;
+}
+
+.searchFormContainer {
+  position: static;
+  /* top: 88px; */
+}
+
+.filteredContainer {
+  position: relative;
+}
+
+.searchFormContainer ul {
+  text-align: center;
+  max-width: 8rem;
+  padding: 1rem;
+  margin-top: 0;
+  background: white;
+  border: solid 1px lightgray;
+}
+
+.filteredUser:hover {
+  background: gray;
+  color: lightgray;
+}

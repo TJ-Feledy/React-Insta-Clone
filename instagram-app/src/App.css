@@ -1,0 +1,16 @@
+.App {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  border: 1.5px solid lightgray;
+}
+
+/* this.props.comments =>
+(3) [{…}, {…}, {…}]
+0: {id: 1, username: "philzcoffee", text: "We've got more than just delicious coffees to offer at our shops!"}
+1: {id: 2, username: "biancasaurus", text: "Looks delicious!"}
+2: {id: 3, username: "martinseludo", text: "Can't wait to try it!"}
+length: 3
+__proto__: Array(0) */
