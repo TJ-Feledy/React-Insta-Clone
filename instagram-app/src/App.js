@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      commentState: {},
+      commentState: [],
       data: []
     }
 
@@ -30,7 +30,7 @@ class App extends React.Component {
 
   render() {
     return (
-      console.log(this.state.commentState),
+      // console.log(this.state.commentState),
       <div className="App">
         <SearchBar comState={this.state.commentState} />
         {this.state.data.map(obj => {

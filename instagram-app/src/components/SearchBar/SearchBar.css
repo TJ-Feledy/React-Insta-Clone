@@ -24,3 +24,7 @@ nav a i {
 nav a i:hover {
   opacity: .7;
 }
+
+.searchForm input {
+  padding: 0 .5rem;
+}
