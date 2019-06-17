@@ -30,9 +30,18 @@ nav a i:hover {
   max-width: 8rem;
 }
 
+.searchForm {
+  position: static;
+  top: .8rem;
+}
+
+.searchFormContainer {
+  position: static;
+  /* top: 88px; */
+}
+
 .filteredContainer {
   position: relative;
-  top: 15rem;
 }
 
 .searchFormContainer ul {

@@ -34,13 +34,13 @@ class SearchForm extends React.Component {
             onChange={this.changeHandler}
           />
         </form>
-        <div className='filteredContainer'>
+        {/* <div className='filteredContainer'>
           <ul>
             {filteredUsers.map(user => {
               return <p className='filteredUser'>{user}</p>
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
     )
   }
