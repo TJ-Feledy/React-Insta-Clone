@@ -17,7 +17,7 @@ class CommentSection extends React.Component {
     }
     // console.log(this.state)
 
-    this.updater(this.state.updatedCommenters);
+    
   }
   
   addCommenter = newComment => {
@@ -33,10 +33,7 @@ class CommentSection extends React.Component {
       newTime: moment().format('MMMM Do YYYY, h:mm:ss a')
     }); 
   }
-  
-  updater = info => {
-    this.props.comState(info)
-  }
+
   // componentWillUpdate(nextProps,nextState) {
   //   localStorage.setItem('commenters', JSON.stringify(nextState.updatedCommenters));
   //   localStorage.setItem('time', JSON.stringify(nextState.newTime));
@@ -54,7 +51,7 @@ class CommentSection extends React.Component {
     // console.log(this.state.updatedCommenters)
     // console.log(this.state.newTime)
     const timeAgo = moment(this.state.newTime, 'MMMM Do YYYY, h:mm:ss a').fromNow()
-
+    // this.props.comState(this.state.updatedCommenters);
     return (
       <div className='commentSection'>
         {this.state.updatedCommenters.map(comment => {

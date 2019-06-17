@@ -27,4 +27,24 @@ nav a i:hover {
 
 .searchForm input {
   padding: 0 .5rem;
+  max-width: 8rem;
+}
+
+.filteredContainer {
+  position: relative;
+  top: 15rem;
+}
+
+.searchFormContainer ul {
+  text-align: center;
+  max-width: 8rem;
+  padding: 1rem;
+  margin-top: 0;
+  background: white;
+  border: solid 1px lightgray;
+}
+
+.filteredUser:hover {
+  background: gray;
+  color: lightgray;
 }

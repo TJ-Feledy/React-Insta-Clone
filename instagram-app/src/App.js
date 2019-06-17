@@ -15,7 +15,6 @@ class App extends React.Component {
       commentState: [],
       data: []
     }
-
   }
 
   commentSectionState = (state) => {
@@ -29,13 +28,17 @@ class App extends React.Component {
   
 
   render() {
+    console.log(this.state.data)
+    const users = this.state.data.map(user => {
+      return user.username
+    })
     return (
-      // console.log(this.state.commentState),
       <div className="App">
-        <SearchBar comState={this.state.commentState} />
-        {this.state.data.map(obj => {
+        <SearchBar users={users} />
+        {this.state.data.length > 0 ? (this.state.data.map(obj => {
           return <PostContainer comStatefn={this.commentSectionState} object={obj} key={obj.id} />
-        })}
+        }))
+        : (<h1>Loading...</h1>)}
       </div>
     );
   }
